@@ -77,7 +77,7 @@ gulp.task('clean', () => {
 gulp.task('deploy', function () {
   return gulp.src('./dist/**/*')
     .pipe(ghPages({
-      remoteUrl: 'git@github.com:Lxxyx/lxxyx.github.io.git',
+      remoteUrl: 'git@github.com:merrier/merrier.github.io.git',
       branch: 'master'
     }))
 })
@@ -86,7 +86,7 @@ gulp.task('webserver', function () {
   connect.server({
     root: './dist',
     livereload: true,
-    port: 9000
+    port: 9001
   })
 })
 
